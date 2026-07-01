@@ -1,0 +1,25 @@
+function analyzeChart() {
+    const file = document.getElementById("imageInput").files[0];
+
+    if (!file) {
+        alert("Please upload a chart screenshot first.");
+        return;
+    }
+
+    document.getElementById("result").innerHTML = `
+        <h2>Analysis Result</h2>
+
+        <p><b>Trend:</b> Analyzing...</p>
+        <p><b>Support:</b> Detecting...</p>
+        <p><b>Resistance:</b> Detecting...</p>
+        <p><b>Momentum:</b> Checking...</p>
+        <p><b>Candlestick:</b> Reading...</p>
+        <p><b>Risk:</b> Calculating...</p>
+
+        <hr>
+
+        <h3>✅ Analysis Complete</h3>
+        <p>This is the first version of the website.</p>
+        <p>AI chart recognition will be added in the next version.</p>
+    `;
+}
